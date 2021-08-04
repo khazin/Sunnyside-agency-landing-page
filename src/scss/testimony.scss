@@ -6,10 +6,10 @@ MOBILE LAYOUT
 /* TESTIMONY STYLE
 =================*/
 .section__testimony {
-    height: 124.5rem;
-    padding-top: 6rem;
   @include flex-column-center;
   justify-content: flex-start;
+  padding: 6rem 0 9rem 0;
+
 
   & .title {
     font-size: 1.6rem;
@@ -18,7 +18,6 @@ MOBILE LAYOUT
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 0.41rem;
-    // margin-top: 6.45rem;
   }
 }
 
@@ -74,11 +73,10 @@ MOBILE LAYOUT
 /* ==========
 TABLET LAYOUT
 ============*/
-@media screen and (min-width:786px) {
+@media screen and (min-width:768px) {
     
     .section__testimony {
-        height: 77.5rem;
-          padding-top: 16rem;
+          padding: 14rem 0;
 
         & .title {
           font-size: 2rem;
@@ -88,23 +86,56 @@ TABLET LAYOUT
 
       .client {
         @include flex-row-center;
+        width: 100%;
+        justify-content: space-evenly;
         
+
+
         &__wrapper {
             justify-content: space-between;
-            margin: 0 .5rem;
         }
         &__img {
             margin-top: 8.1rem;
         }
         &__quote {
-        width: 37rem;
-          margin-top: 6rem;
+      font-size: 1.5rem;
+      width: 24rem;
+          margin-top: 4rem;
         }
         &__name {
-            margin-top: 6.8rem;
+            margin-top: 4.8rem;
         }
         &__job {
           margin-top: 1.2rem;
         }
       }
+}
+
+/* ==========
+DESKTOP LAYOUT
+============*/
+@media screen and (min-width:1366px) {
+    
+  .section__testimony {
+      padding: 16rem 0;
+    }
+
+    .client {
+      justify-content: center;
+      
+      &__wrapper {
+          margin: 0 .5rem;
+      }
+     
+      &__quote {
+    font-size: 1.9rem;
+
+      width: 37rem;
+        margin-top: 6rem;
+      }
+      &__name {
+          margin-top: 6.8rem;
+      }
+    
+    }
 }

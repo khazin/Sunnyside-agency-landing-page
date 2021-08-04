@@ -142,8 +142,8 @@ TABLET LAYOUT
 @media screen and (min-width: 768px) {
   .section__header {
     background-image: url(../../images/desktop/image-header.jpg);
-
     min-height: 80rem;
+    width: 100%;
   background-size: 100% 80rem;
   padding: 4.6rem 4rem;
 
@@ -213,69 +213,8 @@ TABLET LAYOUT
 DESKTOP LAYOUT
 ==============*/
 
-// @media screen and (min-width: 1440px) {
-//   .section__header {
-//     background-image: url(../../images/desktop/image-header.jpg);
-
-//   background-size: 100% 80rem;
-//   padding: 4.6rem 4rem;
-//   }
-
-//   .header__nav {
-//     @include flex-row-center; // display flex row centered
-//     justify-content: space-between;
-//     & .logo {
-//       background-size: 17rem 3.2rem;
-//       width: 17rem;
-//       height: 3.2rem;
-//     }
-//   }
-//   .menu,
-//   .hero {
-//     display: initial;
-//   }
-//   .burger {
-//     display: none;
-//   }
-//   .burger.checked {
-//     & ~ .menu {
-//       display: initial;
-//       background-color: transparent;
-//       width: initial;
-//       height: initial;
-//       margin-top:initial;
+@media screen and (min-width: 1366px) {
   
-//       &::before {
-//        display: none;
-//       }
-//     }
-//   }
   
  
-//   .menu {
-//     height: 2.5rem;
-//     & .link {
-//       margin: 0 2.4rem;
-
-//       font-size: 1.75rem;
-//       font-family: var(--barlow-sans);
-//       color: var(--White);
-
-//       &:last-child {
-//         background-color: var(--White);
-//         margin-right: 1rem;
-//         padding: 1.85rem 3rem;
-//       }
-//     }
-//   }
-//   .hero {
-//     @include flex-column-center;
-//     &__title {
-//       margin-top: 12rem;
-//       font-size: 6rem;
-//     }
-//     &__icon {  
-//       margin-top: 8.8rem;
-//     }
-//   }
-// }
+}

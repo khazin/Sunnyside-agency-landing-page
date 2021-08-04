@@ -34,14 +34,14 @@ MOBILE LAYOUT
 TABLET LAYOUT
 =============*/
 
-@media screen and (min-width:786px) {
+@media screen and (min-width:768px) {
     .section__image{
         display: flex;   
     }
     .image{
-        height: 45rem;
+        height: 30rem;
         width: 25%; 
-        background-size: 100% 45rem;
+        background-size: 100% 30rem;
 
         &.--one {
             background-image: url(../../images/desktop/image-gallery-milkbottles.jpg);
@@ -57,5 +57,17 @@ TABLET LAYOUT
         &.--four {
             background-image: url(../../images/desktop/image-gallery-sugarcubes.jpg);
         }
+    }
+}
+
+/* ==========
+DESKTOP LAYOUT
+=============*/
+
+@media screen and (min-width:1366px) {
+  
+    .image{
+        height: 45rem;
+        background-size: 100% 45rem;
     }
 }
