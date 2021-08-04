@@ -1,0 +1,72 @@
+@import "mixin";
+/* =========
+MOBILE LAYOUT
+============*/
+
+/* SERVICE STYLE
+================*/
+
+.section__service {
+  width: 100%;
+  & .design,
+  & .photography {
+    height: 60rem;
+    background-repeat: no-repeat;
+    background-size: 100% 60rem;
+
+    @include flex-column-center;
+    justify-content: flex-end;
+
+    padding: 0 1rem;
+  }
+
+  & .design {
+    background-image: url(../../images/mobile/image-graphic-design.jpg);
+    & .--text {
+      color: var(--Dark-desaturated-cyan);
+    }
+  }
+  & .photography {
+    background-image: url(../../images/mobile/image-photography.jpg);
+    & .--text {
+      color: var(--Dark-blue);
+    }
+  }
+
+  & .title {
+    font-size: 2.8rem;
+    font-family: var(--fraunces-serif);
+    font-weight: 900;
+    margin-bottom: 2.7rem;
+  }
+  & .paragraph {
+    text-align: center;
+    font-size: 1.65rem;
+    line-height: 2.75rem;
+    font-family: var(--barlow-sans);
+    color: var(--Dark-desaturated-cyan);
+    margin-bottom: 6rem;
+  }
+}
+
+/* ==========
+TABLET LAYOUT
+=============*/
+@media screen and (min-width: 768px) {
+  .section__service {
+    @include flex-row-center;
+    & .design,
+    & .photography {
+      width: 50%;
+      background-repeat: no-repeat;
+      padding: 0 18rem;
+    }
+
+    & .design {
+      background-image: url(../../images/desktop/image-graphic-design.jpg);
+    }
+    & .photography {
+      background-image: url(../../images/desktop/image-photography.jpg);
+    }
+  }
+}

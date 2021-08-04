@@ -1,0 +1,74 @@
+@import "mixin";
+/* =========
+MOBILE LAYOUT
+============*/
+
+/* FOOTER STYLE
+==============*/
+
+.section__footer {
+  background-color: var(--Footer);
+  height: 35rem;
+  width: 100%;
+
+  @include flex-column-center;
+  justify-content: flex-start;
+}
+
+.logo.--footer {
+    background-size: 17rem 3.2rem;
+    width: 17rem;
+    height: 3.2rem;
+    margin-top: 6.5rem;
+  }
+
+.footer__nav {
+    margin-top: 4rem;
+& .link {
+    margin: 0 2.8rem;
+    font-size: 1.8rem;
+    font-family: var(--barlow-sans);
+    color: var(--Dark-moderate-cyan);
+  }
+}
+
+.social {
+margin-top: 9rem;
+    @include flex-row;
+    & .link {
+       
+        & .icon{
+            height: 2rem;
+            width: 2rem;
+            background-repeat: no-repeat;
+            background-size: 2rem 2rem;
+            margin: 0 1.4rem;
+        }
+        & .--facebook {
+            
+        background-image: url(../../images/icon-facebook.svg);
+        }
+        & .--instagram {
+            background-image: url(../../images/icon-instagram.svg);
+
+        }
+        & .--twitter {
+            background-image: url(../../images/icon-twitter.svg);
+        
+        }
+        & .--pinterest {
+            background-image: url(../../images/icon-pinterest.svg);
+        
+        }
+    }
+}
+
+/* =========
+TABLET LAYOUT
+============*/
+
+@media screen and (min-width: 786px) {
+    .logo.--footer {
+        margin-top: 7rem;
+      }
+}

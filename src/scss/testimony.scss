@@ -1,0 +1,110 @@
+@import "mixin";
+/* =========
+MOBILE LAYOUT
+============*/
+
+/* TESTIMONY STYLE
+=================*/
+.section__testimony {
+    height: 124.5rem;
+    padding-top: 6rem;
+  @include flex-column-center;
+  justify-content: flex-start;
+
+  & .title {
+    font-size: 1.6rem;
+    font-family: var(--fraunces-serif);
+    color: var(--Grayish-blue);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.41rem;
+    // margin-top: 6.45rem;
+  }
+}
+
+.client {
+  &__wrapper {
+    @include flex-column-center;
+  }
+  &__img {
+    height: 7.2rem;
+    width: 7.2rem;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin-top: 6.5rem;
+    &.--one {
+      background-image: url(../../images/image-emily.jpg);
+    }
+    &.--two {
+      background-image: url(../../images/image-thomas.jpg);
+    }
+    &.--three {
+      background-image: url(../../images/image-jennie.jpg);
+    }
+  }
+  &__quote {
+      width: 35rem;
+    margin-top: 3rem;
+
+    font-size: 1.9rem;
+    line-height: 3.2rem;
+    font-family: var(--barlow-sans);
+    text-align: center;
+    color: var(--Dark-grayish-blue);
+  }
+  &__name {
+    margin-top: 3.3rem;
+
+    font-family: var(--fraunces-serif);
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--Very-dark-desaturated-blue);
+  }
+  &__job {
+    margin-top: 1.2rem;
+
+    font-family: var(--barlow-sans);
+    font-size: 1.4rem;
+    color: var(--Grayish-blue);
+  }
+}
+
+/* ==========
+TABLET LAYOUT
+============*/
+@media screen and (min-width:786px) {
+    
+    .section__testimony {
+        height: 77.5rem;
+          padding-top: 16rem;
+
+        & .title {
+          font-size: 2rem;
+          letter-spacing: 0.49rem;
+        }
+      }
+
+      .client {
+        @include flex-row-center;
+        
+        &__wrapper {
+            justify-content: space-between;
+            margin: 0 .5rem;
+        }
+        &__img {
+            margin-top: 8.1rem;
+        }
+        &__quote {
+        width: 37rem;
+          margin-top: 6rem;
+        }
+        &__name {
+            margin-top: 6.8rem;
+        }
+        &__job {
+          margin-top: 1.2rem;
+        }
+      }
+}

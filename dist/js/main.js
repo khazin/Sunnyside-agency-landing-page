@@ -1,0 +1,1 @@
+const burger=document.querySelector("#burger"),burgerBtn=document.querySelector(".burger"),hero=document.querySelector(".hero");burger.addEventListener("click",(e=>{hero.classList.toggle("show"),burgerBtn.classList.toggle("checked")}));

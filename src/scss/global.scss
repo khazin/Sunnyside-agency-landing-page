@@ -1,0 +1,21 @@
+/*==========
+GLOBAL STYLE
+============*/
+
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+.container {
+//   width: 100%;
+}
+.logo {
+    background-image: url(../../images/logo.svg);
+    background-repeat: no-repeat;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
